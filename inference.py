@@ -8,7 +8,7 @@ import transformers
 from tqdm import tqdm
 
 
-BERT_PATH = 'bert-large-cased'
+BERT_PATH = 'bert-base-multilingual-cased'
 LINEAR_INPUT = 1024
 MAX_LEN = 128
 THRESHOLD_VALUE = 0.75
