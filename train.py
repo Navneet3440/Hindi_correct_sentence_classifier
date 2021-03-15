@@ -43,6 +43,9 @@ def run():
 
     device = torch.device(config.DEVICE)
     model = BERT_CLASSIFIER()
+    if config.RETRAIN:
+            DEVICE = 'cuda'
+            model.load_state_dict(torch.load(config.RETRAIN_MODEL_LOC))
     model.to(device)
 
     param_optimizer = list(model.named_parameters())
