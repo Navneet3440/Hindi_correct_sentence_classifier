@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 
 BERT_PATH = 'bert-base-multilingual-cased'
-LINEAR_INPUT = 1024
+LINEAR_INPUT = 768
 MAX_LEN = 128
 THRESHOLD_VALUE = 0.75
 TOKENIZER = transformers.BertTokenizer.from_pretrained(BERT_PATH, do_lower_case=False)
