@@ -9,4 +9,7 @@ inputs/dump/*1095k.csv
 inputs/*.ipynb
 inputs/*.csv
 inputs/*test_v1.csv
-
+inputs/v3_corpus
+*.ipynb
+out_*.csv
+*corpus*.csv
