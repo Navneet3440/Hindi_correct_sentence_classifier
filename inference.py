@@ -124,7 +124,7 @@ def run():
         sent_out , logit_score = infer_fn(inference_dataloader, model, device)
         logit_score = [i for b in logit_score for i in b]
         df_out = pd.DataFrame({'sentence':sent_out,'logit_score':logit_score})
-        df_out.to_csv(os.path.join(os.path.dirname(csv_file_loc), 'out_' + os.path.basename(csv_file_loc).split('.')[0] + '.csv'), index =False)
+        df_out.to_csv(os.path.join(os.path.dirname(csv_file_loc), 'out_' + os.path.basename(csv_file_loc).split('.')[0] + '_' + os.path.basename(model_location).split('.')[0] + '.csv'), index =False)
     else:
         print(f"Model path at {model_location} dosen't exist")
 
