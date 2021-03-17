@@ -3,8 +3,10 @@
 __pycache__/
 *.bin
 *.out
+*.ipynb
+inputs/v3_corpus/
 inputs/dump/*1095k.csv
 inputs/*.ipynb
-inputs/*dev_v1.csv
+inputs/*.csv
 inputs/*test_v1.csv
 
